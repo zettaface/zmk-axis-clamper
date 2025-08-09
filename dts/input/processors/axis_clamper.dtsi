@@ -1,0 +1,9 @@
+/ {
+    zip_axis_clamper: zip_axis_clamper {
+        compatible = "zmk,axis-clamper";
+        #input-processor-cells = <0>;
+        history-size = <128>;
+        hysteresis = <15>;
+        threshold = <65>;
+    };
+};

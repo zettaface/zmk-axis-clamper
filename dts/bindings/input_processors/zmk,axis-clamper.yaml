@@ -1,0 +1,14 @@
+description: Input Processor for clamping movements to a single axis
+compatible: "zmk,axis-clamper"
+include: ip_zero_param.yaml
+
+properties:
+  history-size:
+    type: int
+    required: true
+  hysteresis:
+    type: int
+    required: true
+  threshold:
+    type: int
+    required: true

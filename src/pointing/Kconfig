@@ -1,0 +1,16 @@
+if ZMK_POINTING
+
+config ZMK_AXIS_CLAMPER
+    bool "Axis clamper"
+    default y
+    depends on INPUT
+
+endif
+
+if ZMK_POINTER_2S_MIXER
+
+config ZMK_AXIS_CLAMPER_HISTORY_TTL
+    int "History TTL, msec"
+    default 1250
+
+endif # ZMK_POINTER_2S_MIXER
